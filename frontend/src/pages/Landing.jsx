@@ -3,10 +3,10 @@ import { Code2, FlaskConical, Bug, Rocket, ArrowRight, CheckCircle2 } from 'luci
 import Logo from '../components/ui/Logo.jsx'
 
 const features = [
-  { icon: Code2, title: 'Code Analysis', desc: 'Deep repository indexing with AI-powered embeddings.' },
-  { icon: FlaskConical, title: 'Test Generation', desc: 'Auto-generate and run test suites with Selenium & Playwright.' },
-  { icon: Bug, title: 'AI Assistant', desc: 'Chat with your codebase using retrieval-augmented search.' },
-  { icon: Rocket, title: 'CI/CD Integration', desc: 'Ship confidently with automated pipelines to Kubernetes.' },
+  { icon: Code2, title: 'Repository Visualization', desc: 'Turn any GitHub repository into an interactive visual map.' },
+  { icon: FlaskConical, title: 'Interactive Diagram', desc: 'Explore folders and files through a clean, navigable repository graph.' },
+  { icon: Bug, title: 'File Explorer', desc: 'Navigate your repository structure and quickly find the files you need.' },
+  { icon: Rocket, title: 'GitHub Integration', desc: 'Connect a public GitHub repository and start exploring in seconds.' },
 ]
 
 export default function Landing() {
@@ -32,23 +32,23 @@ export default function Landing() {
       <section className="max-w-6xl mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-16 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="pill bg-accent/15 text-accent-light mb-5">
-            <Rocket size={12} /> New — AI Agent with multi-step reasoning
+            <Rocket size={12} /> Free — Visualize any public GitHub repository
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-[1.1] text-white mb-5">
-            Your AI pair engineer for better software.
+            Understand any GitHub repository visually.
           </h1>
           <p className="text-base-50/60 text-base sm:text-lg mb-8 max-w-lg">
-            Connect your GitHub repository and get AI-powered code analysis, automated testing,
-            documentation, and deployment — all in one platform.
+            Paste a GitHub URL and turn your repository into an
+            interactive visual map of its structure, files, and folders.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Link to="/onboarding" className="btn-primary">
-              Get Started Free <ArrowRight size={16} />
+              Try Repo Diagram Free <ArrowRight size={16} />
             </Link>
-            <button className="btn-secondary">Watch Demo</button>
+            <button className="btn-secondary">View Demo</button>
           </div>
           <div className="flex flex-wrap gap-5 mt-8 text-sm text-base-50/50">
-            {['Code Analysis', 'Test Generation', 'AI Assistant', 'CI/CD Integration'].map((t) => (
+            {['GitHub Integration', 'Interactive Repository Map', 'File & Folder Explorer', 'Free to Use'].map((t) => (
               <span key={t} className="flex items-center gap-1.5">
                 <CheckCircle2 size={14} className="text-success" /> {t}
               </span>
@@ -63,13 +63,13 @@ export default function Landing() {
             <span className="w-2.5 h-2.5 rounded-full bg-success/60" />
           </div>
           <div className="space-y-2.5 text-sm font-mono text-base-50/70">
-            {['Analyzing repository...', 'Cloning repository', 'Parsing codebase', 'Generating embeddings', 'Analyzing architecture'].map((line, i) => (
+            {['Repository found', 'Fetching repository tree', 'Reading directories', 'Mapping files', 'Building repository graph'].map((line, i) => (
               <div key={line} className="flex items-center gap-2.5">
                 <CheckCircle2 size={14} className={i < 4 ? 'text-success' : 'text-base-50/30'} />
                 <span>{line}</span>
               </div>
             ))}
-            <div className="pt-2 text-accent-light">Ready for questions?</div>
+            <div className="pt-2 text-accent-light">Repository map ready!</div>
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function Landing() {
       </section>
 
       <footer className="border-t border-base-600/30 py-6 text-center text-sm text-base-50/40">
-        Repo Diagram · Build Better Software with AI
+        Repo Diagram · See your codebase clearly.
       </footer>
     </div>
   )
