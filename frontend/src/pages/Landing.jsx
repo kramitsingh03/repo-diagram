@@ -23,7 +23,7 @@ export default function Landing() {
           </nav>
           <div className="flex items-center gap-3">
             <Link to="/login" className="hidden sm:inline text-sm text-base-50/80 hover:text-white transition">Sign in</Link>
-            <Link to="/onboarding" className="btn-primary text-sm px-4 py-2">Try Repo Diagram Free</Link>
+            <Link to="/app" className="btn-primary text-sm px-4 py-2">Get Started</Link>
           </div>
         </div>
       </header>
@@ -42,7 +42,7 @@ export default function Landing() {
             interactive visual map of its structure, files, and folders.
           </p>
           <div className="flex flex-wrap items-center gap-3">
-            <Link to="/onboarding" className="btn-primary">
+            <Link to="/app" className="btn-primary">
               Try Repo Diagram Free <ArrowRight size={16} />
             </Link>
             <button className="btn-secondary">View Demo</button>
